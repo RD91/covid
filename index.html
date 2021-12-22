@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css" integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Live COVID Stats</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    h1{
+      margin-block: 2em;
+    }
+    table{
+        padding-inline: 5em;
+        letter-spacing: 0.25ch;
+        font-size: 2.5ch;
+    }
+    thead{
+        background-color: #035891;
+        color: #fff;
+    }
+</style>
+<body>
+    <h1>Live Covid Cases in World</h1>
+    <table>
+        <thead>
+          <tr>
+            <th>Country</th>
+            <th>Active Cases</th>
+            <th>Deaths</th>
+            <th>Recovered</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="in"></td>
+            <td id="in-ac"></td>
+            <td id="in-d"></td>
+            <td id="in-rc"></td>
+          </tr>
+          <tr>
+            <td id="us"></td>
+            <td id="us-ac"></td>
+            <td id="us-d"></td>
+            <td id="us-rc"></td>
+          </tr>
+          <tr>
+            <td id="fr"></td>
+            <td id="fr-ac"></td>
+            <td id="fr-d"></td>
+            <td id="fr-rc"></td>
+          </tr>
+          <tr>
+            <td id="aus"></td>
+            <td id="aus-ac"></td>
+            <td id="aus-d"></td>
+            <td id="aus-rc"></td>
+          </tr>
+          
+        </tbody>
+      </table>
+    <script src="app.js"></script>
+</body>
+</html>
